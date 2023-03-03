@@ -37,6 +37,8 @@ class Movie:
 
 
     # 16 Returns the Movie instance with the highest average rating.
+    # ugh i know this is wrong. we need to sort a list and get the last element of it
     @classmethod
-    def highest_rated(cls):
-        pass
+    def highest_rated(cls, reviews):
+        reviews.sort()
+        return reviews[-1]
